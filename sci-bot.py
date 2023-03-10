@@ -80,7 +80,6 @@ def execute(request: SimpleText, ray: OpenfabricExecutionRay) -> SimpleText:
                 # process user input and generate response
                 response = process_input(processed_input)
                 output.append(response)
-                # convert response text to speech
         except Exception as e:
             # handle any unexpected exceptions and return an error message
             output.append(f"An error occurred: {e}. Please try again later.")
